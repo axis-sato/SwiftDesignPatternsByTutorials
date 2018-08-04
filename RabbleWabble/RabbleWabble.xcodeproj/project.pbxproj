@@ -18,6 +18,9 @@
 		599D0B482111B51B0097E203 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599D0B472111B51B0097E203 /* QuestionView.swift */; };
 		D319EE9F21155EFB009DC211 /* SelectQuestionGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D319EE9E21155EFB009DC211 /* SelectQuestionGroupViewController.swift */; };
 		D319EEA121156203009DC211 /* QuestionGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D319EEA021156203009DC211 /* QuestionGroupCell.swift */; };
+		D3721E732115A9D900CA6649 /* QuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3721E722115A9D900CA6649 /* QuestionStrategy.swift */; };
+		D3721E752115AAC800CA6649 /* SequentialQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3721E742115AAC800CA6649 /* SequentialQuestionStrategy.swift */; };
+		D3721E772115AD7A00CA6649 /* RandomQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3721E762115AD7A00CA6649 /* RandomQuestionStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		599D0B472111B51B0097E203 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		D319EE9E21155EFB009DC211 /* SelectQuestionGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuestionGroupViewController.swift; sourceTree = "<group>"; };
 		D319EEA021156203009DC211 /* QuestionGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupCell.swift; sourceTree = "<group>"; };
+		D3721E722115A9D900CA6649 /* QuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStrategy.swift; sourceTree = "<group>"; };
+		D3721E742115AAC800CA6649 /* SequentialQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequentialQuestionStrategy.swift; sourceTree = "<group>"; };
+		D3721E762115AD7A00CA6649 /* RandomQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuestionStrategy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 				599D0B372111B1B40097E203 /* Controllers */,
 				599D0B3A2111B1E70097E203 /* Models */,
 				599D0B3B2111B1F00097E203 /* Resources */,
+				D3721E712115A9A300CA6649 /* Strategies */,
 				599D0B3C2111B2080097E203 /* Views */,
 			);
 			path = RabbleWabble;
@@ -86,8 +93,8 @@
 		599D0B372111B1B40097E203 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				599D0B262111B0B10097E203 /* QuestionViewController.swift */,
 				D319EE9E21155EFB009DC211 /* SelectQuestionGroupViewController.swift */,
+				599D0B262111B0B10097E203 /* QuestionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -120,6 +127,16 @@
 				D319EEA021156203009DC211 /* QuestionGroupCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D3721E712115A9A300CA6649 /* Strategies */ = {
+			isa = PBXGroup;
+			children = (
+				D3721E722115A9D900CA6649 /* QuestionStrategy.swift */,
+				D3721E742115AAC800CA6649 /* SequentialQuestionStrategy.swift */,
+				D3721E762115AD7A00CA6649 /* RandomQuestionStrategy.swift */,
+			);
+			path = Strategies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,13 +210,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3721E752115AAC800CA6649 /* SequentialQuestionStrategy.swift in Sources */,
 				599D0B3E2111B35D0097E203 /* Question.swift in Sources */,
 				599D0B272111B0B10097E203 /* QuestionViewController.swift in Sources */,
+				D3721E772115AD7A00CA6649 /* RandomQuestionStrategy.swift in Sources */,
 				599D0B252111B0B10097E203 /* AppDelegate.swift in Sources */,
 				599D0B402111B3BA0097E203 /* QuestionGroup.swift in Sources */,
 				599D0B482111B51B0097E203 /* QuestionView.swift in Sources */,
 				599D0B422111B4520097E203 /* QuestionGroupData.swift in Sources */,
 				D319EE9F21155EFB009DC211 /* SelectQuestionGroupViewController.swift in Sources */,
+				D3721E732115A9D900CA6649 /* QuestionStrategy.swift in Sources */,
 				D319EEA121156203009DC211 /* QuestionGroupCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
