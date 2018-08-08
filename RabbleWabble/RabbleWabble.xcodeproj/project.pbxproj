@@ -26,6 +26,7 @@
 		D3721E8021187F4300CA6649 /* QuestionGroupCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3721E7F21187F4300CA6649 /* QuestionGroupCaretaker.swift */; };
 		D3721E822118815400CA6649 /* QuestionGroupData.json in Resources */ = {isa = PBXBuildFile; fileRef = D3721E812118815400CA6649 /* QuestionGroupData.json */; };
 		D3721E842118835200CA6649 /* BaseQuestionStrategy..swift in Sources */ = {isa = PBXBuildFile; fileRef = D3721E832118835200CA6649 /* BaseQuestionStrategy..swift */; };
+		D3721E86211B254B00CA6649 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3721E85211B254B00CA6649 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		D3721E7F21187F4300CA6649 /* QuestionGroupCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupCaretaker.swift; sourceTree = "<group>"; };
 		D3721E812118815400CA6649 /* QuestionGroupData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionGroupData.json; sourceTree = "<group>"; };
 		D3721E832118835200CA6649 /* BaseQuestionStrategy..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseQuestionStrategy..swift; sourceTree = "<group>"; };
+		D3721E85211B254B00CA6649 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				599D0B3D2111B35D0097E203 /* Question.swift */,
+				D3721E85211B254B00CA6649 /* Observable.swift */,
 				599D0B3F2111B3BA0097E203 /* QuestionGroup.swift */,
 				D3721E7821171A1800CA6649 /* AppSettings.swift */,
 			);
@@ -234,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3721E86211B254B00CA6649 /* Observable.swift in Sources */,
 				D3721E752115AAC800CA6649 /* SequentialQuestionStrategy.swift in Sources */,
 				599D0B3E2111B35D0097E203 /* Question.swift in Sources */,
 				D3721E7921171A1800CA6649 /* AppSettings.swift in Sources */,
